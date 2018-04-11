@@ -1,0 +1,15 @@
+section.map {
+  border-top: 3px solid gray;
+  border-bottom: 3px solid gray;
+  padding-bottom: -10px;
+}
+
+section.map iframe {
+  border: none;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  /* opacity: 0.8; */
+  display: block; /* Add this */
+}

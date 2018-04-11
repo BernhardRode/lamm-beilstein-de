@@ -1,0 +1,25 @@
+.cover-heading,
+.cover-preheading {
+  font-size: 100px;
+  color: white;
+}
+
+.cover-preheading {
+  font-family: 'Great Vibes', 'cursive';
+}
+
+.cover-heading {
+  font-variant: small-caps;
+  font-weight: bolder;
+}
+
+@media (min-width: 768px) {
+  .cover-heading {
+    font-size: 200px;
+  }
+}
+
+section.home {
+  text-align: center;
+  height: 100vh;
+}
