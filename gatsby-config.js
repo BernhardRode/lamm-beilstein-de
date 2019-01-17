@@ -1,15 +1,24 @@
 module.exports = {
   siteMetadata: {
-    company: 'Gasthof Lamm, Beilstein',
-    slackline: 'tradionell.schwäbisch.gut',
-    keywords: [
-      'gasthof',
-      'schwäbisch',
-      'traditionell',
-      'wein',
-      'maultaschen',
-      'sauerbraten',
-    ],
+    title: 'Lamm Beilstein',
+    author: 'Bernhard Rode',
+    description: 'Webseite des Gasthof Lamm in Beilstein.',
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'lamm-beilstein-de',
+        short_name: 'lamm-beilstein',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/lamm-icon.png', // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
+  ],
 }

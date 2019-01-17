@@ -7,13 +7,16 @@ __      _____| |____      _____  _ __| | _____ _ __ _  ___
   \_/\_/ \___|_.__/ \_/\_/ \___/|_|  |_|\_\___|_(_)|_|\___/ 
 */
 import React from 'react'
+import { Link } from 'gatsby'
+
 import Layout from '../components/layout'
 
-const NotFoundPage = () => (
+const SecondPage = () => (
   <Layout>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <h1>Hi from the second page</h1>
+    <p>Welcome to page 2</p>
+    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 
-export default NotFoundPage
+export default SecondPage
