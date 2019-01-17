@@ -40,7 +40,7 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            <strong>Gasthof Lamm</strong>
+            <strong>Gasthof Lamm | Beilstein</strong>
             <br />
             Familie Kurz - Rode
           </p>
