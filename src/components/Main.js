@@ -39,7 +39,11 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
-          <p />
+          <p>
+            <strong>Gasthof Lamm</strong>
+            <br />
+            Familie Kurz - Rode
+          </p>
           {close}
         </article>
 
