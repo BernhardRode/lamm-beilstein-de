@@ -20,8 +20,10 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "deploy": "npm run preDeploy && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
+    "preDeploy": "gatsby build --prefix-paths",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
