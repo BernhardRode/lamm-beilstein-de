@@ -26,23 +26,23 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-7a6733d7b1ed8d6056ae.js"
+    "url": "webpack-runtime-38790cb98e7b61388284.js"
   },
   {
-    "url": "app-4681aecbc447af3ae930.js"
+    "url": "app-32bae38c8d12e6feb94c.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-4761d21acac1f87e8392.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9c4153d364b39d99ab8c42f3f50acfd2"
+    "revision": "7431aa21860e7a0f676d4a2f54c0b04a"
   },
   {
-    "url": "1.61ff2bf6a8a3ea75da28.css"
+    "url": "1.959ccaa4304fcb1a4bd8.css"
   },
   {
-    "url": "0-249efb274ae4f9ca8899.js"
+    "url": "0-d086a610d8f9963ec560.js"
   },
   {
     "url": "1-f5d92a4c44bdee4dba35.js"
@@ -79,7 +79,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/lamm-beilstein-de/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -148,7 +148,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `${pathname}`
+        return `/lamm-beilstein-de${pathname}`
       } else {
         return pathname
       }
