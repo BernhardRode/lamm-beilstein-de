@@ -1,6 +1,12 @@
 language: node_js
 node_js:
   - 'stable'
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
 deploy:
   provider: pages
   skip-cleanup: false
@@ -9,8 +15,5 @@ deploy:
   keep-history: false
   on:
     branch: master
-branches:
-  only:
-    - master
 script:
   - 'npm run deploy'
