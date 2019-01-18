@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - 'stable'
-cache: yarn
 deploy:
   provider: pages
   skip-cleanup: false
@@ -13,7 +12,5 @@ deploy:
 branches:
   only:
     - master
-before_script:
-  - 'yarn global add gatsby'
 script:
-  - 'yarn run deploy'
+  - 'npm run deploy'

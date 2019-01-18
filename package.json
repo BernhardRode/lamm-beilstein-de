@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "author": "Bernhard Rode",
   "dependencies": {
-    "gatsby": "^2.0.76",
     "gatsby-plugin-manifest": "^2.0.9",
     "gatsby-plugin-offline": "^2.0.16",
     "gatsby-plugin-react-helmet": "^3.0.2",
@@ -15,7 +14,9 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "gasthof",
+    "germany"
   ],
   "license": "MIT",
   "scripts": {
@@ -27,6 +28,7 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
+    "gatsby": "^2.0.91",
     "gh-pages": "^2.0.1",
     "prettier": "^1.14.2"
   },
