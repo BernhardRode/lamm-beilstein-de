@@ -16,6 +16,4 @@ branches:
 before_script:
   - 'yarn global add gatsby'
 script:
-  - 'yarn run build:prod'
-after_success:
   - 'yarn run deploy'

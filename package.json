@@ -19,11 +19,11 @@
   ],
   "license": "MIT",
   "scripts": {
+    "build:prod": "gatsby build --prefix-paths",
     "build": "gatsby build",
-    "deploy": "gatsby -v && gh-pages -d public",
+    "deploy": "gatsby -v && npm run build:prod && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "build:prod": "gatsby build --prefix-paths",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
