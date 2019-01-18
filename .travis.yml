@@ -1,19 +1,21 @@
 language: node_js
 node_js:
   - 'stable'
-# cache:
-#   directories:
-#   - node_modules
+cache: yarn
 deploy:
   provider: pages
-  skip-cleanup: true
+  skip-cleanup: false
   github-token: $GITHUB_TOKEN
   local_dir: public
-  keep-history: true
+  keep-history: false
   on:
     branch: master
+branches:
+  only:
+    - master
+before_script:
+  - 'yarn global add gatsby'
 script:
-  - 'npm i -g gatsby'
-  - 'npm i'
-  - 'npm run test'
-  - 'npm run deploy'
+  - 'yarn run build:prod'
+after_success:
+  - 'yarn run deploy'
