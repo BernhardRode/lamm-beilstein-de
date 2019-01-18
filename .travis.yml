@@ -4,15 +4,12 @@ node_js:
 cache:
   directories:
     - node_modules
-branches:
-  only:
-    - master
 deploy:
   provider: pages
-  skip-cleanup: false
+  skip-cleanup: true
   github-token: $GITHUB_TOKEN
   local_dir: public
-  keep-history: false
+  keep-history: true
   on:
     branch: master
 script:
