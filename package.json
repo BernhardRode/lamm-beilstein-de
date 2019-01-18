@@ -24,7 +24,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "preDeploy": "gatsby build --prefix-paths",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
