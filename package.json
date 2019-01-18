@@ -20,7 +20,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "npm run preDeploy && gh-pages -d public",
+    "deploy": "gatsby -v && npm run preDeploy && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "preDeploy": "gatsby build --prefix-paths",
