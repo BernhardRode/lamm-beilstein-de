@@ -7,11 +7,11 @@ __      _____| |____      _____  _ __| | _____ _ __ _  ___
   \_/\_/ \___|_.__/ \_/\_/ \___/|_|  |_|\_\___|_(_)|_|\___/ 
 */
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from './../components/layout'
 
-import Header from '../components/Header'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
+import Header from './../components/Header'
+import Main from './../components/Main'
+import Footer from './../components/Footer'
 
 class IndexPage extends React.Component {
   constructor(props) {
