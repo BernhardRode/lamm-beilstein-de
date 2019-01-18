@@ -4,7 +4,6 @@ module.exports = {
     author: 'Bernhard Rode',
     description: 'Webseite des Gasthof Lamm in Beilstein.',
   },
-  pathPrefix: '/lamm-beilstein-de',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
