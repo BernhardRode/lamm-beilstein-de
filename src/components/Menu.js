@@ -13,7 +13,11 @@ function getMenueItemLabels(data) {
   const menueItems = []
   data.allMenuItemsJson.edges.forEach(item => {
     console.log(item)
-    menueItems.push(<li key={item.node.titel}>{item.node.titel}</li>)
+    menueItems.push(
+      <li key={item.node.titel}>
+        {item.node.titel} - {item.node.beschreibung}
+      </li>
+    )
   })
   return menueItems
 }
@@ -26,6 +30,7 @@ const Menu = props => (
           edges {
             node {
               titel
+              beschreibung
             }
           }
         }
