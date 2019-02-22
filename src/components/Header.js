@@ -56,6 +56,15 @@ const Header = props => (
             Kontakt
           </button>
         </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('menu')
+            }}
+          >
+            Speisekarte
+          </button>
+        </li>
       </ul>
     </nav>
   </header>
