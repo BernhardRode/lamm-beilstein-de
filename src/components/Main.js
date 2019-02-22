@@ -9,6 +9,8 @@ __      _____| |____      _____  _ __| | _____ _ __ _  ___
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Menu from '../components/Menu'
+
 import pic01 from '../images/familie.jpg'
 
 class Main extends React.Component {
@@ -138,6 +140,18 @@ class Main extends React.Component {
               </li>
             </ul>
           </form>
+          {close}
+        </article>
+
+        <article
+          id="menu"
+          className={`${this.props.article === 'menu' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Speisekarte</h2>
+          <Menu />
           {close}
         </article>
       </div>
