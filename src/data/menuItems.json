@@ -192,12 +192,33 @@
     "titel": "Alkoholfreie & heiße Getränke",
     "beschreibung": "",
     "elemente": [
+      { "titel": "Fanta", "groesse": "0.2l", "preis": 1.9 },
+      { "titel": "Coca Cola", "groesse": "0.2l", "preis": 1.9 },
+      { "titel": "Fanta", "groesse": "0.2l", "preis": 1.9 },
+      { "titel": "Spezi", "groesse": "0.2l", "preis": 1.9 },
+      { "titel": "Spezi", "groesse": "0.5l", "preis": 3.4 },
+      { "titel": "Apfelsaftschorle", "groesse": "1/4l", "preis": 2.8 },
       {
-        "titel": "",
-        "groesse": "",
-        "beschreibung": "",
-        "preis": 2
-      }
+        "titel": "Schwarzer Johannisbeerschorle",
+        "groesse": "1/4l",
+        "preis": 2.8
+      },
+      { "titel": "Orangenschorle", "groesse": "1/4l", "preis": 2.8 },
+      { "titel": "Mineralwasser", "groesse": "0.5l", "preis": 2.8 },
+      { "titel": "1 Glas Tee", "preis": 1.8 },
+      { "titel": "1 Tasse Kaffee", "preis": 1.9 },
+      { "titel": "1 Kännchen Kaffee", "preis": 3.3 },
+      { "titel": "Latte Machiato", "preis": 2.5 },
+      { "titel": "Cappuccino", "preis": 2.5 },
+      { "titel": "Espresso", "preis": 2 },
+      {
+        "titel": "Gemischtes Eis",
+        "beschreibung": "Cassissorbet, Schokolade, Walnuss, Vanilleis",
+        "preis": 4.8
+      },
+      { "titel": "Gemischtes Eis mit Sahne", "preis": 5.8 },
+      { "titel": "Vanilleis mit heißen Himbeeren", "preis": 6.8 },
+      { "titel": "Vanilleis mit Schokoladensoße", "preis": 6 }
     ],
     "fussnote": []
   },
@@ -206,11 +227,56 @@
     "beschreibung": "",
     "elemente": [
       {
-        "titel": "",
-        "groesse": "",
-        "beschreibung": "",
-        "preis": 2,
-        "zusatzstoffe": []
+        "titel": "Leberwurst Hausgemacht",
+        "preis": 4.8
+      },
+      {
+        "titel": "Griebenwurst Hausgemacht ",
+        "preis": 4.8
+      },
+      {
+        "titel": "Weiße Presswurst Hausgemacht ",
+        "preis": 4.8
+      },
+      {
+        "titel": "Schinkenwurst",
+        "preis": 5.2
+      },
+      {
+        "titel": "Fleischkäse",
+        "preis": 5.2
+      },
+      {
+        "titel": "Schwäbischer Wurstsalat",
+        "preis": 6.8
+      },
+      {
+        "titel": "Straßburger Wurstsalat",
+        "preis": 7.1
+      },
+      {
+        "titel": "Hausmacher Vesperteller",
+        "preis": 6.9
+      },
+      {
+        "titel": "Salatplatte mit Schinken und Käse",
+        "preis": 7.2
+      },
+      {
+        "titel": "Rauchfleisch",
+        "preis": 6.9
+      },
+      {
+        "titel": "Käsebrot",
+        "preis": 5.5
+      },
+      {
+        "titel": "Schinkenbrot",
+        "preis": 5.5
+      },
+      {
+        "titel": "Gemischter Salatteller",
+        "preis": 4
       }
     ],
     "fussnote": []
@@ -220,11 +286,57 @@
     "beschreibung": "",
     "elemente": [
       {
-        "titel": "",
-        "groesse": "",
-        "beschreibung": "",
-        "preis": 2
-      }
+        "titel": "Gebratene Maultaschen",
+        "preis": 7.5,
+        "beschreibung": "mit Ei, Kartoffel und Blattsalat"
+      },
+      { "titel": "1 Paar Saiten mit Brot", "preis": 4.4, "beschreibung": "" },
+      {
+        "titel": "1 Paar Bratwürste",
+        "preis": 8.2,
+        "beschreibung": "mit Kartoffel und Blattsalat"
+      },
+      {
+        "titel": "Warmer Fleischkäse",
+        "preis": 6.7,
+        "beschreibung": "mit Zwiebeln und Brot"
+      },
+      {
+        "titel": "Ofenfrischer Schweinebraten",
+        "preis": 12,
+        "beschreibung": "mit Spätzle und Beilagensalat"
+      },
+      {
+        "titel": "Rinderschmorbraten",
+        "preis": 12.5,
+        "beschreibung": "mit Spätzle und Beilagensalat"
+      },
+      {
+        "titel": "Sauerbraten",
+        "preis": 13.3,
+        "beschreibung": "mit Spätzle und Beilagensalat"
+      },
+      {
+        "titel": "Zigeunerbraten",
+        "preis": 13.8,
+        "beschreibung": "mit Spätzle und Beilagensalat"
+      },
+      {
+        "titel": "Schweineschnitzel",
+        "preis": 8.9,
+        "beschreibung": "mit Beilagensalat"
+      },
+      {
+        "titel": "Schwäbischer Rostbraten",
+        "preis": 16.3,
+        "beschreibung": "mit Spätzle und Beilagensalat"
+      },
+      {
+        "titel": "Kalbsnierenbraten",
+        "preis": 13.8,
+        "beschreibung": "mit Spätzle und Beilagensalat"
+      },
+      { "titel": "Portion Spätzle oder Pommes", "preis": 4, "beschreibung": "" }
     ],
     "fussnote": []
   }
