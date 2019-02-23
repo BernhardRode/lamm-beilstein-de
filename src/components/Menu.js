@@ -9,13 +9,46 @@ __      _____| |____      _____  _ __| | _____ _ __ _  ___
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
+function getKey(element) {
+  const { titel, beschreibung, groesse, preis } = element
+  const key = titel + beschreibung + groesse + preis
+  return key
+}
+
+function renderPrice(preis) {
+  return <span>{preis.toFixed(2)} &euro;</span>
+}
+
+function getSubMenueItemLabels(elemente) {
+  const menueItems = []
+  elemente.forEach(element => {
+    menueItems.push(
+      <li key={getKey(element)}>
+        <div>
+          <h3>{element.titel}</h3>
+          <p>{element.beschreibung}</p>
+        </div>
+        <div>
+          <p>{element.groesse}</p>
+        </div>
+        <div>
+          <p>{renderPrice(element.preis)}</p>
+        </div>
+      </li>
+    )
+  })
+  return menueItems
+}
+
 function getMenueItemLabels(data) {
   const menueItems = []
   data.allMenuItemsJson.edges.forEach(item => {
-    console.log(item)
     menueItems.push(
       <li key={item.node.titel}>
-        {item.node.titel} - {item.node.beschreibung}
+        <h3>{item.node.titel}</h3>
+        <p>{item.node.beschreibung}</p>
+        <ul className="row">{getSubMenueItemLabels(item.node.elemente)}</ul>
+        <p>{item.node.fussnote}</p>
       </li>
     )
   })
@@ -31,6 +64,13 @@ const Menu = props => (
             node {
               titel
               beschreibung
+              elemente {
+                titel
+                groesse
+                beschreibung
+                preis
+              }
+              fussnote
             }
           }
         }
@@ -38,7 +78,7 @@ const Menu = props => (
     `}
     render={data => (
       <>
-        <ul>{getMenueItemLabels(data)}</ul>
+        <ul className="no-style">{getMenueItemLabels(data)}</ul>
       </>
     )}
   />
