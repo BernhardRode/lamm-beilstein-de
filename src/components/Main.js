@@ -12,6 +12,7 @@ import PropTypes from 'prop-types'
 import Menu from '../components/Menu'
 
 import pic01 from '../images/familie.jpg'
+import Imprint from './Imprint'
 
 class Main extends React.Component {
   render() {
@@ -152,6 +153,18 @@ class Main extends React.Component {
         >
           <h2 className="major">Speisekarte</h2>
           <Menu />
+          {close}
+        </article>
+
+        <article
+          id="imprint"
+          className={`${this.props.article === 'imprint' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Speisekarte</h2>
+          <Imprint />
           {close}
         </article>
       </div>

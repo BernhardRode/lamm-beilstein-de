@@ -22,12 +22,22 @@ const Footer = props => (
       >
         picture by <span>Tim Marshall</span>
       </a>
+      &nbsp;|&nbsp;
+      <span
+        style={{ cursor: 'pointer' }}
+        onClick={() => {
+          props.onOpenArticle('imprint')
+        }}
+      >
+        Impressum &amp; Datenschutz
+      </span>
     </p>
   </footer>
 )
 
 Footer.propTypes = {
   timeout: PropTypes.bool,
+  onCloseArticle: PropTypes.func,
 }
 
 export default Footer
