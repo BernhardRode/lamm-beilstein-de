@@ -163,7 +163,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Speisekarte</h2>
+          <h2 className="major">Impressum und Datenschutz</h2>
           <Imprint />
           {close}
         </article>
