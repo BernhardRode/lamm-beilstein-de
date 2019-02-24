@@ -12,7 +12,16 @@ import PropTypes from 'prop-types'
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
     <p className="copyright">
-      &copy; Gasthof Lamm Beilstein {new Date().getFullYear()} ❤
+      &copy; Gasthof Lamm Beilstein {new Date().getFullYear()}
+      &nbsp;❤&nbsp;
+      <a
+        href="https://unsplash.com/@timmarshall?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Download free do whatever you want high-resolution photos from Dan Burton"
+      >
+        picture by <span>Tim Marshall</span>
+      </a>
     </p>
   </footer>
 )
