@@ -112,6 +112,20 @@ class Main extends React.Component {
         </article>
 
         <article
+          id="zimmer"
+          className={`${this.props.article === 'zimmer' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Fremdenzimmer</h2>
+          <p>
+            Wir bieten Fremdenzimmer. Bei Interesse bitte telefonisch melden.
+          </p>
+          {close}
+        </article>
+
+        <article
           id="contact"
           className={`${this.props.article === 'contact' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
