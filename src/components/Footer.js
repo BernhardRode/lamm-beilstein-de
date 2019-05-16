@@ -9,6 +9,8 @@ __      _____| |____      _____  _ __| | _____ _ __ _  ___
 import React from 'react'
 import PropTypes from 'prop-types'
 
+const version = process.env.TRAVIS_COMMIT || new Date().getTime()
+
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
     <p className="copyright">
@@ -20,7 +22,7 @@ const Footer = props => (
         rel="noopener noreferrer"
         title="Download free do whatever you want high-resolution photos from Dan Burton"
       >
-        picture by <span>Tim Marshall</span>
+        Bild <span>Tim Marshall</span>
       </a>
       &nbsp;|&nbsp;
       <span
@@ -31,6 +33,7 @@ const Footer = props => (
       >
         Impressum &amp; Datenschutz
       </span>
+      &nbsp;|&nbsp; Version {version}
     </p>
   </footer>
 )
