@@ -194,7 +194,6 @@
     "elemente": [
       { "titel": "Fanta", "groesse": "0.2l", "preis": 1.9 },
       { "titel": "Coca Cola", "groesse": "0.2l", "preis": 1.9 },
-      { "titel": "Fanta", "groesse": "0.2l", "preis": 1.9 },
       { "titel": "Spezi", "groesse": "0.2l", "preis": 1.9 },
       { "titel": "Spezi", "groesse": "0.5l", "preis": 3.4 },
       { "titel": "Apfelsaftschorle", "groesse": "1/4l", "preis": 2.8 },

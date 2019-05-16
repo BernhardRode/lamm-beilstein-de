@@ -1,8 +1,19 @@
+const packageJson = require('./package.json')
+
+const activeEnv = process.env.NODE_ENV || 'development'
+
+require('dotenv').config({
+  path: `.env.${activeEnv}`,
+})
+
+const commit = process.env.TRAVIS_BUILD_NUMBER || 'unknown'
+
 module.exports = {
   siteMetadata: {
     title: 'Lamm Beilstein',
     author: 'Bernhard Rode',
     description: 'Webseite des Gasthof Lamm in Beilstein.',
+    version: `${packageJson.version}.${commit}`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
