@@ -24,7 +24,8 @@
   "scripts": {
     "build": "gatsby build",
     "preDeploy": "gatsby build --prefix-paths",
-    "deploy": "npm run preDeploy && cp CNAME public/ && gh-pages -d public",
+    "buildRelease": "npm run preDeploy && cp CNAME public/",
+    "deploy": "npm run buildRelease && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 0"

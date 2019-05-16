@@ -5,8 +5,10 @@ cache:
   directories:
     - node_modules
 before_script:
-  - git config --global user.email "mail@bernahrdrode.de"
+  - git config --global user.email "mail@bernhardrode.de"
   - git config --global user.name "Travis-CI"
+script:
+  - 'npm run buildRelease'
 after_script:
   - git config credential.helper "store --file=.git/credentials"
   - echo "https://${GITHUB_TOKEN}:@github.com" > .git/credentials
@@ -22,7 +24,3 @@ deploy:
   keep-history: true
   on:
     branch: master
-script:
-  - 'npm run test'
-after_success:
-  - 'npm run deploy'

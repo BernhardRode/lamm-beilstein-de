@@ -29,22 +29,13 @@ const Header = props => (
     </div>
     <nav>
       <ul>
-        <li>
+        <li hidden>
           <button
             onClick={() => {
               props.onOpenArticle('ueber-uns')
             }}
           >
             Über uns
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('zimmer')
-            }}
-          >
-            Zimmer
           </button>
         </li>
         <li>
@@ -59,19 +50,28 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('adresse')
+              props.onOpenArticle('menu')
             }}
           >
-            Kontakt
+            Speisekarte
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('menu')
+              props.onOpenArticle('zimmer')
             }}
           >
-            Speisekarte
+            Zimmer
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
+              props.onOpenArticle('adresse')
+            }}
+          >
+            Kontakt
           </button>
         </li>
       </ul>
