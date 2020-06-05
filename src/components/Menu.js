@@ -31,9 +31,6 @@ function getSubMenueItemLabels(elemente) {
         <div>
           <p>{element.groesse}</p>
         </div>
-        <div>
-          <p>{renderPrice(element.preis)}</p>
-        </div>
       </li>
     )
   })
